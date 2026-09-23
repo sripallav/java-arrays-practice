@@ -23,8 +23,6 @@ public class AllElementsUnique {
 class uniqueele{
     public boolean uniqueele(int [] arr){
 
-        int unique = 0;
-
         for(int i=0;i<arr.length;i++){
             for(int j=0;j<i;j++){
                 if(arr[i] == arr[j])
