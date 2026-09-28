@@ -31,14 +31,14 @@ class reversearr2{
         arr[left] =arr[right];
         arr[right] = temp;
 
-            
         left++;
         right--;
 
         
 
-
         }
+
+        
 
         System.out.print(Arrays.toString(arr));
 
