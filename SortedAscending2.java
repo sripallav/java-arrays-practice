@@ -24,22 +24,38 @@ public class SortedAscending2 {
 
     public void checkSorted(int[] arr) {
 
-        for(int i=0;i<arr.length;i++){
+        boolean sorted = true;
 
-            if(arr[i] < arr[i+1]){
-                continue;
+        for(int i=0;i<arr.length-1;i++){
 
+            if(arr[i] > arr[i+1]){
+                sorted = false;
+                break;
 
             }
+           
+        }
 
-            System.out.print("elements are in sorted");
+        if(sorted){
+            System.out.print("Array is already in sorted order");
+        }
+        else{
+            System.out.print("Array is not in sorted order");
+        }
 
         }
 
 
-        
 
-        
-
-        }
     }
+
+
+        
+        
+
+
+        
+
+        
+
+   
