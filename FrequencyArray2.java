@@ -24,30 +24,33 @@ public class FrequencyArray2 {
 
     public void frequency(int[] arr) {
 
-        int [] visited = new int[arr.length];
+        boolean visited[] = new boolean[arr.length];
 
         for(int i=0;i<arr.length;i++){
 
-            if(visited[i] == 1){
+            if(visited[i]){
                 continue;
-
             }
 
             int count = 0;
 
             for(int j=0;j<arr.length;j++){
+
                 if(arr[i] == arr[j]){
                     count++;
-                    visited[j] = 1;
-
-
+                    visited[j] = true;
                 }
+
+
             }
 
-            System.out.println(arr[i] + " ---> " + count);
+            System.out.println(arr[i] + " - " + count);
+
+
         }
 
-
-
+    
     }
 }
+
+        
